@@ -48,6 +48,34 @@
         </section>
       </main>
       <footer></footer>
+      <div class="popup">
+        <div class="popup__container">
+          <button class="popup__button-cancel">
+            <img
+              class="popup__icon-cancel"
+              src="./images/popup__icon-cancel.png"
+            />
+          </button>
+          <h2 class="popup__title">Editar perfil</h2>
+          <form class="popup__form" id="profile__form">
+            <input
+              class="popup__input"
+              name="profile__name"
+              id="profile__name"
+              type="text"
+              placeholder="Nombre"
+            />
+            <input
+              class="popup__input"
+              name="profile__about"
+              id="profile__about"
+              type="text"
+              placeholder="Acerca de mí"
+            />
+            <button class="popup__button-save">Guardar</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="./scripts/script.js"></script>
   </body>

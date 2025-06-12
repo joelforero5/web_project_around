@@ -18,13 +18,13 @@
   padding-right: 30px;
 }
 .profile__content {
-  max-width: 415px;
-  max-height: 77px;
-  width: 100%;
+  width: fit-content;
   height: 100%;
   display: flex;
   flex-direction: row;
   margin: auto 0;
+  padding-right: 17px;
+  justify-content: flex-start;
 }
 .profile__data {
   width: 100%;
