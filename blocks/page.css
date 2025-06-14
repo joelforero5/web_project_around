@@ -10,9 +10,19 @@ body {
 }
 .page {
   max-width: 1280px;
+  min-width: 320px;
   height: 100%;
   margin: auto;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    max-width: 880px;
+  }
 }

@@ -18,21 +18,22 @@
   padding-right: 30px;
 }
 .profile__content {
-  width: fit-content;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   margin: auto 0;
-  padding-right: 17px;
+
   justify-content: flex-start;
 }
 .profile__data {
-  width: 100%;
+  width: fit-content;
   height: 100%;
   padding-right: 18px;
 }
 .profile__name {
-  margin: auto;
+  width: fit-content;
+  margin: 0;
   font-weight: 500;
   font-size: 42px;
   padding-bottom: 16px;
@@ -50,6 +51,7 @@
   background-color: black;
   padding: 0;
   border: none;
+  margin-right: auto;
 }
 .profile__button_follow {
   max-width: 150px;
@@ -60,7 +62,30 @@
   margin: auto 0 auto auto;
   padding: 0;
   border: none;
+  margin: 0;
+}
+.profile__button-icon {
+  width: 100%;
+  height: 100%;
 }
 .profile__button-icon:hover {
   opacity: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile {
+    max-width: 80%;
+  }
+  .profile__picture {
+    max-width: 90px;
+    max-width: 90px;
+    padding-right: 15px;
+  }
+  .profile__name {
+    font-size: 32px;
+  }
+  .profile__button_follow {
+    max-width: 100px;
+    max-height: 34px;
+  }
 }
