@@ -42,11 +42,10 @@
   height: fit-content;
   font-weight: 900;
   font-size: 24px;
-  padding: 0 auto;
+  margin: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding-left: 15px;
 }
 .posts__card-like-button {
   all: unset;
