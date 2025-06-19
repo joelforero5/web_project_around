@@ -27,13 +27,13 @@
   width: fit-content;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 18px;
+  flex-direction: column;
 }
 .profile__data {
   width: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 18px;
 }
 
 .profile__name {
@@ -61,7 +61,6 @@
   background-color: black;
   border: 1px solid white;
   margin-left: auto;
-  flex-shrink: 0;
 }
 .profile__button-icon {
   width: 22px;
@@ -96,7 +95,6 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    box-sizing: border-box;
   }
   .profile__picture {
     max-width: 120px;
@@ -110,8 +108,11 @@
     align-items: center;
     padding-top: 30px;
   }
-  .profile__data {
+  .profile__container {
     padding-bottom: 35px;
+  }
+  .profile__data {
+    padding-bottom: 14px;
   }
 
   .profile__name {
@@ -130,6 +131,9 @@
     width: 282px;
     height: 50px;
     margin: auto;
-    pa
+  }
+  .posts__card-like-icon {
+    width: 16px;
+    height: 16px;
   }
 }
