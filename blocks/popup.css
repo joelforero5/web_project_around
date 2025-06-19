@@ -93,4 +93,22 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 719px) {
+  .popup__container {
+    position: relative;
+    max-width: 282px;
+    width: 282px;
+    height: auto;
+    padding: 19px;
+    box-sizing: border-box;
+  }
+  .popup__title {
+    font-size: 18px;
+  }
+  .popup__button-cancel {
+    width: 16px;
+    height: 26px;
+    top: -35px;
+    right: 0;
+    z-index: 2;
+  }
 }
