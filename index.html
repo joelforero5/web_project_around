@@ -53,110 +53,7 @@
           </div>
         </section>
         <section class="posts">
-          <div class="posts__content">
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Vanois National Parkaaaaa</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="posts__content"></div>
         </section>
       </main>
       <footer class="footer">
@@ -196,6 +93,21 @@
         </div>
       </div>
     </div>
+    <template id="posts__card-template">
+      <div class="posts__card">
+        <img class="posts__card-image" alt="post image" />
+        <div class="posts__card-about">
+          <h3 class="posts__card-title"></h3>
+          <button class="posts__card-like-button">
+            <img
+              class="posts__card-like-icon"
+              alt="Like icon"
+              src="./images/posts__card-icon-like.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
