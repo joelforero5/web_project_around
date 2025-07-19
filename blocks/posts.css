@@ -36,15 +36,16 @@
   color: black;
   margin: auto;
 }
+
 .posts__card-title {
-  width: fit-content;
-  height: fit-content;
+  max-width: 200px;
+  margin-left: 15px;
+  margin-right: 10px;
   font-weight: 900;
   font-size: 24px;
-  margin: auto;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .posts__card-like-button {
   all: unset;
