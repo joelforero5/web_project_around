@@ -1,4 +1,4 @@
-import { renderCards, addCard } from "./cards.js";
+import { renderCards, toggleLike } from "./cards.js";
 import {
   editButton,
   popup,
