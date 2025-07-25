@@ -30,7 +30,10 @@
                 <h2 class="profile__name" id="profile__name">
                   Jacques Cousteau
                 </h2>
-                <button class="profile__button profile__button_edit">
+                <button
+                  class="profile__button profile__button_edit"
+                  id="profile__button_edit"
+                >
                   <img
                     class="profile__button-icon"
                     alt="profile button edit icon"
@@ -43,7 +46,10 @@
               </p>
             </div>
 
-            <button class="profile__button profile__button_follow">
+            <button
+              class="profile__button profile__button_add"
+              id="profile__button_add"
+            >
               <img
                 class="profile__button-icon"
                 alt="profile button follow icon"
@@ -53,110 +59,7 @@
           </div>
         </section>
         <section class="posts">
-          <div class="posts__content">
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Vanois National Parkaaaaa</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="posts__card">
-              <img
-                class="posts__card-image"
-                alt="post image"
-                src="./images/posts__card-image1.jpg"
-              />
-              <div class="posts__card-about">
-                <h3 class="posts__card-title">Valle de Yosemite</h3>
-                <button class="posts__card-like-button">
-                  <img
-                    class="posts__card-like-icon"
-                    alt="Like icon"
-                    src="./images/posts__card-icon-like.svg"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="posts__content"></div>
         </section>
       </main>
       <footer class="footer">
@@ -164,7 +67,7 @@
           <p class="footer__title">© 2025 Around The U.S.</p>
         </div>
       </footer>
-      <div class="popup">
+      <div class="popup" id="popup">
         <div class="popup__container">
           <button class="popup__button-cancel">
             <img
@@ -173,21 +76,19 @@
               alt="icono de cancelar"
             />
           </button>
-          <h2 class="popup__title">Editar perfil</h2>
+          <h2 class="popup__title" id="popup__title"></h2>
           <form class="popup__form" id="popup__form">
             <input
               class="popup__input"
-              name="popup__name"
-              id="popup__name"
+              name="popup__input-name"
+              id="popup__input-name"
               type="text"
-              placeholder="Nombre"
             />
             <input
               class="popup__input"
-              name="popup__about"
-              id="popup__about"
+              name="popup__input-secondary"
+              id="popup__input-secondary"
               type="text"
-              placeholder="Acerca de mí"
             />
             <button class="popup__button-save" id="popup__button-save">
               Guardar
@@ -196,6 +97,21 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
+    <template id="posts__card-template">
+      <div class="posts__card">
+        <img class="posts__card-image" alt="post image" />
+        <div class="posts__card-about">
+          <h3 class="posts__card-title"></h3>
+          <button class="posts__card-like-button">
+            <img
+              class="posts__card-like-icon"
+              alt="Like icon"
+              src="./images/posts__card-icon-like.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </template>
+    <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
