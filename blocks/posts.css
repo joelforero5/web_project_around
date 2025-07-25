@@ -27,10 +27,11 @@
   border-top-right-radius: 10px;
 }
 .posts__card-about {
+  width: 100%;
   max-height: 79px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   color: black;
