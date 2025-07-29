@@ -15,6 +15,7 @@
   height: 100%;
 }
 .posts__card {
+  position: relative;
   width: 100%;
   background-color: white;
   border-radius: 10px;
@@ -25,6 +26,28 @@
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.posts__card-delete-button {
+  position: absolute;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.posts__card-delete-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+.posts__card-delete-button:hover .posts__card-delete-icon {
+  transform: scale(1.2);
 }
 .posts__card-about {
   width: 100%;

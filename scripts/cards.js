@@ -33,7 +33,11 @@ export function createCard({ name, link }) {
   template.querySelector(".posts__card-image").src = link;
   template.querySelector(".posts__card-title").textContent = name;
   const likedButton = template.querySelector(".posts__card-like-button");
+  const deleteButton = template.querySelector(".posts__card-delete-button");
   likedButton.addEventListener("click", toggleLike);
+  deleteButton.addEventListener("click", function (event) {
+    deleteCard(event, template);
+  });
   return template;
 }
 export function renderCards(container) {
@@ -53,4 +57,8 @@ export function toggleLike(event) {
   likeIcon.src = isActive
     ? "./images/posts__card-icon-like--active.png"
     : "./images/posts__card-icon-like.svg";
+}
+export function deleteCard(event, template) {
+  const card = event.currentTarget.closest(".posts__card");
+  card.remove();
 }
