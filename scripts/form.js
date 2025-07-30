@@ -1,7 +1,7 @@
 import { addCard } from "./cards.js";
 import {
   popup,
-  closeButton,
+  closeButtonProfile,
   profileName,
   profileOccupation,
   popupName,
@@ -16,14 +16,14 @@ import {
 export function initializeFormEvents() {
   editButton.addEventListener("click", () => openPopup("edit"));
   addCardButton.addEventListener("click", () => openPopup("add"));
-  closeButton.addEventListener("click", closePopup);
+  closeButtonProfile.addEventListener("click", closePopup);
 }
 
 export function openPopup(mode) {
   popup.setAttribute("data-mode", mode);
   popup.classList.add("popup__opened");
   if (mode === "edit") {
-    currentMod = popupTitle.textContent = "Editar perfil";
+    popupTitle.textContent = "Editar perfil";
     popupName.placeholder = "Nombre";
     popupSecondary.placeholder = "Acerca de mí";
     popupName.value = profileName.textContent.trim();

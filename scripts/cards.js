@@ -1,3 +1,9 @@
+import {
+  imagePopup,
+  fullImage,
+  caption,
+  closeButtonImage,
+} from "./constants.js";
 export const initialCards = [
   {
     name: "Valle de Yosemite",
@@ -34,9 +40,14 @@ export function createCard({ name, link }) {
   template.querySelector(".posts__card-title").textContent = name;
   const likedButton = template.querySelector(".posts__card-like-button");
   const deleteButton = template.querySelector(".posts__card-delete-button");
+  const image = template.querySelector(".posts__card-image");
   likedButton.addEventListener("click", toggleLike);
   deleteButton.addEventListener("click", function (event) {
     deleteCard(event, template);
+  });
+  image.addEventListener("click", () => {
+    console.log("Imagen clickeada: abriendo popup");
+    openImage(name, link);
   });
   return template;
 }
@@ -62,3 +73,13 @@ export function deleteCard(event, template) {
   const card = event.currentTarget.closest(".posts__card");
   card.remove();
 }
+export function openImage(name, link) {
+  fullImage.src = link;
+  fullImage.alt = name;
+  caption.textContent = name;
+  imagePopup.classList.add("popup__opened");
+  console.log("Popup de imagen abierto");
+}
+closeButtonImage.addEventListener("click", () => {
+  imagePopup.classList.remove("popup__opened");
+});
