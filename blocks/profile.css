@@ -54,6 +54,7 @@
   background-color: black;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 .profile__button_add {
   width: 150px;
@@ -61,13 +62,17 @@
   background-color: black;
   border: 1px solid white;
   margin-left: auto;
+  cursor: pointer;
 }
 .profile__button-icon {
   width: 22px;
   height: 22px;
 }
 
-.profile__button_follow:hover {
+.profile__button_add:hover {
+  opacity: 60%;
+}
+.profile__button_edit:hover {
   opacity: 60%;
 }
 

@@ -2,7 +2,7 @@ import { renderCards, toggleLike } from "./cards.js";
 import {
   editButton,
   popup,
-  closeButton,
+  closeButtonProfile,
   profileName,
   profileOccupation,
   popupName,
@@ -21,6 +21,6 @@ const postsContentElement = document.querySelector(".posts__content");
 renderCards(postsContentElement);
 
 editButton.addEventListener("click", () => openPopup("edit"));
-closeButton.addEventListener("click", () => closePopup);
+closeButtonProfile.addEventListener("click", () => closePopup);
 
 form.addEventListener("submit", handleProfileFormSubmit);
