@@ -98,14 +98,29 @@
               class="popup__input"
               name="popup__input-name"
               id="popup__input-name"
+              minlength="2"
+              maxlength="40"
+              required
               type="text"
             />
+            <span
+              id="popup__input-name-error"
+              class="popup__input_type_error popup__input-name-error"
+            ></span>
+
             <input
               class="popup__input"
               name="popup__input-secondary"
               id="popup__input-secondary"
+              minlength="2"
+              maxlength="40"
+              required
               type="text"
             />
+            <span
+              id="popup__input-secondary-error"
+              class="popup__input_type_error popup__input-secondary-error"
+            ></span>
             <button class="popup__button-save" id="popup__button-save">
               Guardar
             </button>

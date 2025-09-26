@@ -15,12 +15,21 @@ import {
   closePopup,
   handleProfileFormSubmit,
 } from "./form.js";
+import { enableValidation } from "./validate.js";
 initializeFormEvents();
 
 const postsContentElement = document.querySelector(".posts__content");
 renderCards(postsContentElement);
 
-editButton.addEventListener("click", () => openPopup("edit"));
 closeButtonProfile.addEventListener("click", () => closePopup);
 
 form.addEventListener("submit", handleProfileFormSubmit);
+export const validationConfig = {
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__button-save",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__error_visible",
+};
+enableValidation(validationConfig);
