@@ -75,10 +75,7 @@
             src="./images/posts__card-image1.jpg"
           />
           <p class="popup__caption"></p>
-          <button
-            class="popup__button-cancel popup__button-cancel--image"
-            id="popupImageCancelButton"
-          >
+          <button class="popup__button-cancel" id="popupImageCancelButton">
             <img
               class="popup__icon-cancel"
               src="./images/popup__icon-cancel.png"
@@ -98,33 +95,36 @@
           </button>
           <h2 class="popup__title" id="popup__title"></h2>
           <form class="popup__form" id="popup__form">
-            <input
-              class="popup__input"
-              name="popup__input-name"
-              id="popup__input-name"
-              minlength="2"
-              maxlength="40"
-              required
-              type="text"
-            />
-            <span
-              id="popup__input-name-error"
-              class="popup__input_type_error popup__input-name-error"
-            ></span>
-
-            <input
-              class="popup__input"
-              name="popup__input-secondary"
-              id="popup__input-secondary"
-              minlength="2"
-              maxlength="40"
-              required
-              type="text"
-            />
-            <span
-              id="popup__input-secondary-error"
-              class="popup__input_type_error popup__input-secondary-error"
-            ></span>
+            <div class="popup__field">
+              <input
+                class="popup__input"
+                name="popup__input-name"
+                id="popup__input-name"
+                minlength="2"
+                maxlength="40"
+                required
+                type="text"
+              />
+              <span
+                id="popup__input-name-error"
+                class="popup__error popup__error_visible"
+              ></span>
+            </div>
+            <div class="popup__field">
+              <input
+                class="popup__input"
+                name="popup__input-secondary"
+                id="popup__input-secondary"
+                minlength="2"
+                maxlength="40"
+                required
+                type="text"
+              />
+              <span
+                id="popup__input-secondary-error"
+                class="popup___error"
+              ></span>
+            </div>
             <button class="popup__button-save" id="popup__button-save">
               Guardar
             </button>
