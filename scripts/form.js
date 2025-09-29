@@ -27,7 +27,7 @@ export function initializeFormEvents() {
   document.addEventListener("keydown", (evt) => {
     if (evt.key === "Escape") {
       const openedPopup = document.querySelector(".popup__opened");
-      if (openedPopup) closePopup(openedPopup);
+      if (openedPopup) closePopup();
     }
   });
 }

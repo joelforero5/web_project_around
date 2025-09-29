@@ -81,5 +81,19 @@ export function openImage(name, link) {
   console.log("Popup de imagen abierto");
 }
 closeButtonImage.addEventListener("click", () => {
-  imagePopup.classList.remove("popup__opened");
+  closePopup();
 });
+imagePopup.addEventListener("mousedown", (evt) => {
+  if (evt.target === imagePopup) {
+    closePopup();
+  }
+});
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    const openedPopup = document.querySelector(".popup__opened");
+    if (openedPopup) closePopup();
+  }
+});
+function closePopup() {
+  imagePopup.classList.remove("popup__opened");
+}
